@@ -7,7 +7,8 @@ export class GetDoctorsQueryDto {
     @IsOptional()
     @IsString()
     @IsEnum(DoctorSpecialization)
-    @ApiProperty({ enum: DoctorSpecialization, example: 'cardiologist', description: 'Filter by specialization' })
+    @ApiProperty({ enum: DoctorSpecialization })
+    @ApiPropertyOptional({ example: 'cardiologist', description: 'Filter by specialization' })
     specialization?: DoctorSpecialization;
 
     @IsOptional()
@@ -44,7 +45,7 @@ export class GetDoctorParamDto {
 
 export class GetAvailableSlotsQueryDto {
     @IsDateString()
-    @ApiProperty({ example: new Date() || '2025-08-03' })
+    @ApiProperty({ example: '2025-08-03' })
     date: string;
 }
 

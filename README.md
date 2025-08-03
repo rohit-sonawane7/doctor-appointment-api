@@ -23,7 +23,7 @@ All times handled in UTC (FE must convert if needed)
 
 Setup Instructions:
 
-1. Clone the repo: git clone https://github.com/your-username/doctor-appointment-api.git
+1. Clone the repo: git clone https://github.com/rohit-sonawane7/doctor-appointment-api.git
 2. cd doctor-appointment-api
 3. Install dependencies: npm install
 4.  Configure .env : copy .env.example

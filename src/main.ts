@@ -24,7 +24,7 @@ async function bootstrap() {
     .setTitle('Doctor Appointment API')
     .setDescription('Book appointments with available doctors. All times in UTC.')
     .setVersion('1.0')
-    .addBearerAuth()
+    .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT' })
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
