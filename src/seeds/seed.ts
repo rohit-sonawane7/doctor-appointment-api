@@ -14,7 +14,14 @@ async function bootstrap() {
     { name: 'Dr. Rohit S.', specialization: DoctorSpecialization.CARDIOLOGIST },
     { name: 'Dr. Asha P.', specialization: DoctorSpecialization.DERMATOLOGIST },
     { name: 'Dr. Anil K.', specialization: DoctorSpecialization.ORTHOPEDIC },
+    { name: 'Dr. Neha B.', specialization: DoctorSpecialization.GENERAL },
+    { name: 'Dr. Rajesh M.', specialization: DoctorSpecialization.NEUROLOGIST },
+    { name: 'Dr. Priya T.', specialization: DoctorSpecialization.PEDIATRICIAN },
+    { name: 'Dr. Sameer R.', specialization: DoctorSpecialization.PSYCHIATRIST },
+    { name: 'Dr. Leena W.', specialization: DoctorSpecialization.ENT },
+    { name: 'Dr. Meera N.', specialization: DoctorSpecialization.GYNECOLOGIST },
   ];
+
 
   await doctorRepo.save(doctors);
   console.log('Seeded doctors');
